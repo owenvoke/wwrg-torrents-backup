@@ -1,0 +1,14 @@
+{
+  "name": "pxgamer/wwrg-torrents-backup",
+  "description": "A basic backup of WWRG torrents.",
+  "license": "proprietary",
+  "require": {
+    "nezamy/route": "1.0.*",
+    "smarty/smarty": "3.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "pxgamer\\WwrgTorrents\\": "src/"
+    }
+  }
+}
