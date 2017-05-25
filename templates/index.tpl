@@ -19,5 +19,8 @@
             <li><a href="/search?c=music">Music</a></li>
         </ul>
     </div>
+    <div class="text-center">
+        <small>{$data->total_torrents} torrents and counting...</small>
+    </div>
 </div>
 {include file='include/footer.tpl'}

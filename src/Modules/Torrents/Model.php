@@ -30,4 +30,11 @@ class Model
 
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
+
+    public static function total()
+    {
+        $stmt = Server\Database::connect()->query('SELECT count(*) AS count FROM torrents');
+        $stmt->execute();
+        return $stmt->fetch(\PDO::FETCH_OBJ)->count;
+    }
 }

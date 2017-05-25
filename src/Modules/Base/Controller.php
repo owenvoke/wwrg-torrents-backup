@@ -2,6 +2,7 @@
 
 namespace pxgamer\WwrgTorrents\Modules\Base;
 
+use pxgamer\WwrgTorrents\Modules\Torrents;
 use pxgamer\WwrgTorrents\Routing;
 
 class Controller extends Routing\Base
@@ -9,6 +10,8 @@ class Controller extends Routing\Base
     public function index()
     {
         $data = new \stdClass();
+
+        $data->total_torrents = Torrents\Model::total();
 
         $this->smarty->display(
             'index.tpl',
