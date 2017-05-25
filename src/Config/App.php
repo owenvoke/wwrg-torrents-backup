@@ -22,4 +22,5 @@ class App
         'udp://tracker.publicbt.com/announce',
         'udp://open.demonii.com/1337'
     ];
+    const CRON_USER = 'https://worldwidetorrents.eu/api/group/torrents/?id=3';
 }

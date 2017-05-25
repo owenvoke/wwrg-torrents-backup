@@ -23,4 +23,9 @@ class Controller extends Routing\Base
             ]
         );
     }
+
+    public function cron()
+    {
+        Torrents\Model::cron();
+    }
 }
