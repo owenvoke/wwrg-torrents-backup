@@ -26,7 +26,7 @@ class Router
         $route->any('/cron', ['pxgamer\WwrgTorrents\Modules\Torrents\Controller', 'cron']);
 
         // Route fallback for page not found
-        $route->any('/*', ['pxgamer\WwrgTorrents\Modules\Base\Controller', 'error_not_found']);
+        $route->any('/*', ['pxgamer\WwrgTorrents\Modules\Base\Controller', 'errorNotFound']);
 
         $route->end();
     }

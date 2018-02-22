@@ -43,7 +43,7 @@ class Model
     {
         $db = Server\Database::connect();
         $stmt = $db->prepare('INSERT IGNORE INTO torrents (title, info_hash, added, size, category, link)
-                                                              VALUES(:title, :info_hash, :added, :size, :category, :link)');
+                              VALUES(:title, :info_hash, :added, :size, :category, :link)');
         header("Content-Type: text/json, text/plain");
         $json_data = file_get_contents(Config\App::CRON_USER);
 
